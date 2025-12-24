@@ -26,17 +26,28 @@ Developed as a practical demonstration of full-stack web development, this proje
 - **Form validation, state management**, and user feedback mechanisms
 
 ---
+## Technology Stack
 
-## Goal & Motivation
+### Frontend:
+- **React** - UI library for dynamic components
+- **JavaScript (ES6+)** - Modern JavaScript with arrow functions, destructuring, hooks
+- **Fetch API** - For HTTP requests to backend
+- **CSS** - Styling with inline styles and CSS animations
 
-The primary objective was to create a **practical, full-stack web application** that demonstrates:
+### Backend:
+- **Spring Boot 4.0.0** - Java framework for REST APIs
+- **Spring Data JPA** - Object-relational mapping (ORM)
+- **Hibernate 7.1.8** - Entity management
+- **MySQL 8.0** - Relational database
 
-1. **Complete CRUD functionality** - Users can Create, Read, Update, and Delete CPU records
-2. **Database relationships** - Managing CPUs and their associated sockets with proper foreign keys
-3. **API-driven architecture** - Separation of concerns between frontend and backend
-4. **User experience** - Intuitive interface with visual feedback and animations
-5. **Production-ready code** - Docker support for easy deployment
-6. **Professional practices** - Clean code, version control, and documentation
+### DevOps:
+- **Docker** - Containerization
+- **Docker Compose** - Multi-container orchestration
+- **Git** - Version control
+
+### Build Tools:
+- **Maven** - Java dependency management
+- **npm** - Node.js package manager
 
 ---
 
@@ -113,16 +124,6 @@ Table: cpu
 
 ---
 
-### Phase 4: Docker & Deployment
-
-**Created:**
-1. `Dockerfile` - Containerizes Spring Boot application with Java 17
-2. `docker-compose.yml` - Orchestrates MySQL and backend services
-3. Environment configuration for container networking
-
-**Benefits:** Easy deployment, consistent environments across machines, no local MySQL installation needed
-
----
 
 ## Code Architecture
 
@@ -259,62 +260,19 @@ npm install
 ```dockerfile
 FROM amazoncorretto:17
 ```
-
 ---
 
-## Technology Stack
+## Future Improvements
 
-### Frontend:
-- **React** - UI library for dynamic components
-- **JavaScript (ES6+)** - Modern JavaScript with arrow functions, destructuring, hooks
-- **Fetch API** - For HTTP requests to backend
-- **CSS** - Styling with inline styles and CSS animations
-
-### Backend:
-- **Spring Boot 4.0.0** - Java framework for REST APIs
-- **Spring Data JPA** - Object-relational mapping (ORM)
-- **Hibernate 7.1.8** - Entity management
-- **MySQL 8.0** - Relational database
-
-### DevOps:
-- **Docker** - Containerization
-- **Docker Compose** - Multi-container orchestration
-- **Git** - Version control
-
-### Build Tools:
-- **Maven** - Java dependency management
-- **npm** - Node.js package manager
-
----
-
-## Installation & Setup
-
-### Prerequisites:
-- Java 17+
-- Node.js & npm
-- MySQL
-- Docker (optional)
-- Git
-
-### Backend Setup:
-```bash
-cd backend
-./mvnw clean package
-./mvnw spring-boot:run
-```
-
-### Frontend Setup:
-```bash
-cd frontend
-npm install
-npm start
-```
-
-### Docker Setup:
-```bash
-cd backend
-docker-compose up
-```
+- Add authentication and user accounts
+- Implement CPU search and filtering
+- Create detailed CPU specifications page
+- Add CPU comparison feature
+- Mobile responsiveness improvements
+- Unit and integration testing
+- Performance optimization with pagination
+- Dark mode toggle
+- Export CPU data to CSV/Excel
 
 ---
 
@@ -360,36 +318,35 @@ Dynamic dropdown populated from database showing available sockets for CPU compa
 
 ---
 
-## Key Learnings
+## Installation & Setup
 
-1. **Full-stack architecture** - Understanding how frontend and backend communicate via APIs
-2. **State management** - React hooks for managing component state efficiently
-3. **API design** - RESTful principles and proper HTTP method usage
-4. **Database relationships** - Foreign keys and entity relationships (One-to-Many)
-5. **Async programming** - Promise chains with .then() and async/await concepts
-6. **Git workflow** - Branching, committing, and pushing code to repositories
-7. **Docker deployment** - Containerizing applications for consistency
-8. **Error handling** - User feedback and validation for robust applications
+### Prerequisites:
+- Java 17+
+- Node.js & npm
+- MySQL
+- Docker (optional)
+- Git
 
+### Backend Setup:
+```bash
+cd backend
+./mvnw clean package
+./mvnw spring-boot:run
+```
+
+### Frontend Setup:
+```bash
+cd frontend
+npm install
+npm start
+```
+
+### Docker Setup:
+```bash
+cd backend
+docker-compose up
+```
 ---
-
-## Future Improvements
-
-- Add authentication and user accounts
-- Implement CPU search and filtering
-- Create detailed CPU specifications page
-- Add CPU comparison feature
-- Mobile responsiveness improvements
-- Unit and integration testing
-- Performance optimization with pagination
-- Dark mode toggle
-- Export CPU data to CSV/Excel
-
----
-
-## Repository
-
-**GitHub:** https://github.com/marriammahmed/CPU_APP
 
 **Structure:**
 ```
@@ -433,13 +390,6 @@ Open http://localhost:3000 in browser.
 
 ---
 
-## Contact & Credits
-
-**Developer:** Mariam Ahmed
-
-**Course:** Full-Stack Web Development
-
-**Date Completed:** November 28, 2025
 
 ---
 
