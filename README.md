@@ -1,6 +1,5 @@
-# CPU Management Application - Full Stack Web App
+# CPU Management Application - DevOps
 
----
 
 ## Description
 
